@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/concert-club/static/css/main.a80b832a.css",
+    "main.js": "/concert-club/static/js/main.dc800259.js",
+    "static/js/787.e21d7f6a.chunk.js": "/concert-club/static/js/787.e21d7f6a.chunk.js",
+    "static/media/label.png": "/concert-club/static/media/label.120f9814e12f6eea40bf.png",
+    "static/media/fakeImg.png": "/concert-club/static/media/fakeImg.17a9701968a43b0119a3.png",
+    "index.html": "/concert-club/index.html",
+    "static/media/arrow.svg": "/concert-club/static/media/arrow.c6a344e1937b188117b9d71171ae1571.svg",
+    "main.a80b832a.css.map": "/concert-club/static/css/main.a80b832a.css.map",
+    "main.dc800259.js.map": "/concert-club/static/js/main.dc800259.js.map",
+    "787.e21d7f6a.chunk.js.map": "/concert-club/static/js/787.e21d7f6a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a80b832a.css",
+    "static/js/main.dc800259.js"
+  ]
+}
