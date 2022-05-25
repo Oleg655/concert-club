@@ -1,0 +1,16 @@
+.postsContainer {
+  border-top: 1px solid #000000;
+  flex-wrap: wrap;
+  .name {
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-left: 1.5em;
+    //margin-right: 2em;
+  }
+  .posts {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,21 @@
+.wrapper {
+  //min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  //justify-content: space-between;
+  .usersBlock {
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-around;
+  }
+  .information {
+    display: flex;
+    justify-content: space-between;
+  }
+  .name {
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 2em;
+    margin-left: 1.5em;
+  }
+}

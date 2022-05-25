@@ -1,0 +1,62 @@
+.label {
+  min-height: 100vh;
+  background: url(../assets/label.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  .text {
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: #fff;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #000000 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    span:nth-child(1) {
+      font-size: 4rem;
+      line-height: 2rem;
+      font-weight: 700;
+    }
+    span:nth-child(2) {
+      font-size: 2rem;
+      line-height: 2rem;
+      font-weight: 700;
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.5rem;
+    padding-left: 3em;
+    padding-right: 3em;
+    button:nth-child(1) {
+      padding: 1rem 1rem;
+      border: #ffffff;
+      cursor: pointer;
+      outline: none;
+      transform: rotate(180deg);
+    }
+    button:nth-child(2) {
+      font-size: 0.8em;
+      line-height: 1em;
+      padding: 1rem 5rem;
+      cursor: pointer;
+      font-weight: 600;
+      background: #ffffff;
+      border: #ffffff;
+      outline: none;
+    }
+    button:nth-child(3) {
+      padding: 1rem 1rem;
+      cursor: pointer;
+      background: #ffffff;
+      border: #ffffff;
+      outline: none;
+    }
+  }
+}

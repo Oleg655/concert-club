@@ -1,0 +1,36 @@
+.userBlock {
+  width: 17%;
+  height: 8vw;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1em;
+
+  .userInform {
+    display: flex;
+    flex-direction: column;
+    .userName {
+      font-size: 1em;
+      font-weight: 700;
+      line-height: 1.5em;
+      text-transform: capitalize;
+    }
+    .userCity {
+      font-size: 0.8em;
+      line-height: 1em;
+      line-height: 1.5em;
+      color: rgba(0, 0, 0, 0.41);
+    }
+  }
+
+  .button {
+    background: #101010;
+    font-weight: 600;
+    color: #fff;
+    font-size: 0.7em;
+    padding: 0.7rem 1.5rem;
+    line-height: 1em;
+    cursor: pointer;
+  }
+}

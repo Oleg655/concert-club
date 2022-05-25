@@ -1,0 +1,25 @@
+.formBlock {
+  display: flex;
+
+  justify-content: center;
+  .form {
+    display: flex;
+    flex-direction: column;
+    input {
+      height: 3vw;
+    }
+    textarea {
+      width: 35vw;
+      height: 10vw;
+    }
+    button {
+      background: #101010;
+      font-weight: 600;
+      color: #fff;
+      font-size: 0.7em;
+      padding: 0.7rem 1.5rem;
+      line-height: 1em;
+      cursor: pointer;
+    }
+  }
+}

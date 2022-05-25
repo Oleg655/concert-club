@@ -1,0 +1,17 @@
+.publicationBlock {
+ //border-bottom: 1px solid #000000;
+  //border-right: 1px solid #000000;
+ // border-left: 1px solid #000000;
+  margin-left: 3em;
+  margin-right: 3em;
+  img {
+    width: 20vh;
+    height: 100%;
+  }
+  .name {
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 1.5em;
+    
+  }
+}

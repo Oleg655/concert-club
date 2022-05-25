@@ -1,0 +1,18 @@
+.foter{
+    display: flex;
+    justify-content: space-between;
+}
+.foter span{
+    font-weight: 500;
+    font-size: 2em;
+    //line-height: 2em;
+    margin-left: 1.5em;
+}
+.foter p{
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #939393;
+    width: 60%;
+    margin: 0;
+    margin-right: 1.5em;
+}

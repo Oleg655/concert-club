@@ -1,0 +1,25 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .posts {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+    button{
+        background: #101010;
+        font-weight: 600;
+        color: #fff;
+        font-size: 0.7em;
+        padding: 0.7rem 1.5rem;
+        line-height: 1em;
+        cursor: pointer;
+        width: 20%;
+    }
+  }
+}

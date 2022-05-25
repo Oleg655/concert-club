@@ -1,0 +1,44 @@
+.scrollBlock {
+  .name {
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 2em;
+    margin-left: 1.5em;
+  }
+  .description {
+    margin-left: 3em;
+    padding-left: 3em;
+    width: 30vw;
+    overflow-y: scroll;
+    height: 20vw;
+    direction: rtl;
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background: rgb(206, 201, 201);
+      border: 4px solid transparent;
+      background-clip: content-box;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #0d1e4b;
+      height: 5px;
+      // border-top: 25px solid transparent;
+      // border-bottom: 25px solid transparent;
+      // background-clip: content-box;
+    }
+    .body {
+      direction: ltr;
+    }
+    .title {
+      font-size: 1em;
+      font-weight: 700;
+      line-height: 1.5em;
+    }
+    .text {
+      color: #939393;
+      font-size: 1em;
+      line-height: 2em;
+    }
+  }
+}

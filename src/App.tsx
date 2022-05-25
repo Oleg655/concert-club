@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import { Header } from "./Header";
+import { PageOne } from "./page-1/PageOne";
+import { Form } from "./page-2/posts/full-page-of-post/form/Form";
+import { FullPost } from "./page-2/posts/full-page-of-post/FullPost";
+import { Profile } from "./page-2/Profile";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      
+      <Routes>
+        <Route path="/" element={<PageOne />} />
+        <Route path="/profile/:id" element={<Profile />} />
+        <Route path="/fullposts/:id" element={<FullPost />} />
+        <Route path="/form:id" element={<Form />}/>
+      </Routes>
+    </>
   );
 }
 
