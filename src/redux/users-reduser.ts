@@ -48,6 +48,7 @@ const initialState = {
   profile: null as UserT | null,
   posts: [] as PostT[] | [],
   publication: [] as PublicationT[] | [],
+  loader: false,
 };
 
 export const usersReducer = (
@@ -55,17 +56,22 @@ export const usersReducer = (
   action: ActionsType
 ): initialStateType => {
   switch (action.type) {
+    case "SET_LOADER":
+      return {
+        ...state,
+        loader: action.loader,
+      };
     case "SET_USERS":
       return {
         ...state,
         users: [...action.serverUsers],
       };
-      case "SET_USER_PROFILE":
+    case "SET_USER_PROFILE":
       return {
         ...state,
-        profile: {...action.serverProfile},
+        profile: { ...action.serverProfile },
       };
-    
+
     case "SET_POSTS":
       return {
         ...state,
@@ -110,16 +116,26 @@ export const setLoader = (loader: boolean) => {
   return { type: "SET_LOADER", loader } as const;
 };
 
+export const setLoading = (
+  loader: boolean
+): ThunkAction<Promise<void>, AppStateType, unknown, ActionsType> => {
+  return async (dispatch, getState) => {
+    dispatch(setLoader(loader));
+  };
+};
+
 export const requestUsers = (
   count: number
 ): ThunkAction<Promise<void>, AppStateType, unknown, ActionsType> => {
   return async (dispatch, getState) => {
+    dispatch(setLoading(true))
     const response = await usersAPI.getUsers(count);
     dispatch(setUsers(response.data));
+    dispatch(setLoading(false))
   };
 };
 export const requestProfile = (
-  userId: string|undefined
+  userId: string | undefined
 ): ThunkAction<Promise<void>, AppStateType, unknown, ActionsType> => {
   return async (dispatch, getState) => {
     const response = await usersAPI.getProfile(userId);
@@ -130,16 +146,20 @@ export const requestUserPublication = (
   userId: string | undefined
 ): ThunkAction<Promise<void>, AppStateType, unknown, ActionsType> => {
   return async (dispatch, getState) => {
+    dispatch(setLoading(true))
     const response = await usersAPI.getUserPublication(userId);
     dispatch(setUserPublication(response.data));
+    dispatch(setLoading(false))
   };
 };
 export const requestPosts = (
   userId: string | undefined
 ): ThunkAction<Promise<void>, AppStateType, unknown, ActionsType> => {
   return async (dispatch, getState) => {
+    dispatch(setLoading(true))
     const response = await usersAPI.getPosts(userId);
     dispatch(setPosts(response.data));
+    dispatch(setLoading(false))
   };
 };
 export const leaveComment = (

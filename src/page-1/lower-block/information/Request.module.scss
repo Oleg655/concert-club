@@ -1,13 +1,13 @@
 .requestBlock {
   position: relative;
   width: 50%;
+  
   border: 1px solid #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-right: 3.2em;
-  //flex-grow: 1;
   .title {
     position: absolute;
     top: 5%;
@@ -15,10 +15,14 @@
     font-weight: 600;
     font-size: 1.2em;
     line-height: 2em;
+    
   }
   textarea {
     width: 40vw;
     height: 30vh;
+    resize: none;
+    line-height: 2rem;
+    padding: 0 2rem;
   }
   button {
     position: absolute;

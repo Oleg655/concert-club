@@ -20,8 +20,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     button {
       padding: 0.6rem 1.2rem;
+      background: #ffffff;
+      cursor: pointer;
     }
   }
 }
@@ -52,7 +55,8 @@
     align-items: center;
     button {
       padding: 0.6rem 1.2rem;
+      background: #ffffff;
+      cursor: pointer;
     }
   }
-  
 }

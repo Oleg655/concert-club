@@ -15,23 +15,4 @@
     font-size: 1rem;
   }
 }
-.fullPost {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  padding: 1rem 2rem;
-  overflow: hidden;
-  border-bottom: 1px solid #a79c9c;
-  .userInform{
-    display: flex;
-    justify-content: space-between;
-    color: #1e8f1b;
-  }
-  .title {
-    font-size: 1rem;
-    font-weight: 700;
-  }
-  .body {
-    font-size: 1rem;
-  }
-}
+

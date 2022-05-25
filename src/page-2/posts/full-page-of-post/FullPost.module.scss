@@ -2,24 +2,39 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  .posts {
-    display: flex;
-    justify-content: space-evenly;
+  .postsContainer {
+    width: 60%;
     flex-wrap: wrap;
-   
+    .posts {
+      border-bottom: 1px solid #000;
+      .usersNames {
+        display: flex;
+        justify-content: space-between;
+        span {
+          color: #28c430;
+        }
+      }
+    }
+    .title {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .body {
+      font-size: 1rem;
+    }
   }
-  .button{
+  .button {
     display: flex;
     justify-content: center;
-    button{
-        background: #101010;
-        font-weight: 600;
-        color: #fff;
-        font-size: 0.7em;
-        padding: 0.7rem 1.5rem;
-        line-height: 1em;
-        cursor: pointer;
-        width: 20%;
+    button {
+      background: #101010;
+      font-weight: 600;
+      color: #fff;
+      font-size: 0.7em;
+      padding: 0.7rem 1.5rem;
+      line-height: 1em;
+      cursor: pointer;
+      width: 20%;
     }
   }
 }

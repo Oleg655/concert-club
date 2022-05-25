@@ -16,6 +16,7 @@ export const Profile = () => {
   const profile = useSelector<AppStateType, UserT | null>(
     (state) => state.usersPage.profile
   );
+  
   useEffect(() => {
     dispatch(requestProfile(params.id));
   }, []);

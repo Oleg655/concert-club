@@ -2,8 +2,8 @@
   .name {
     font-weight: 500;
     font-size: 2em;
-    line-height: 2em;
     margin-left: 1.5em;
+    margin-bottom: 1em;
   }
   .description {
     margin-left: 3em;
@@ -23,9 +23,6 @@
     &::-webkit-scrollbar-thumb {
       background: #0d1e4b;
       height: 5px;
-      // border-top: 25px solid transparent;
-      // border-bottom: 25px solid transparent;
-      // background-clip: content-box;
     }
     .body {
       direction: ltr;
